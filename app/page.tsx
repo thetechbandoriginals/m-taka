@@ -64,6 +64,119 @@ export default function HomePage() {
         </div>
       </ParallaxHero>
 
+      <section className="py-20 px-8 bg-gradient-to-br from-background via-card to-muted/30 relative overflow-hidden">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="recycling-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="2" fill="currentColor" className="text-primary" />
+                <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" strokeWidth="0.5" className="text-accent" />
+              </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#recycling-pattern)" />
+          </svg>
+        </div>
+
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
+            {/* Main heading with enhanced typography */}
+            <div className="mb-8">
+              <div className="inline-flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" />
+                  </svg>
+                </div>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wider">Our Mission</span>
+              </div>
+
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance leading-tight">
+                Cultivating Sustainable
+                <span className="block text-accent">Zero Waste Communities</span>
+              </h2>
+            </div>
+
+            {/* Enhanced description with better typography */}
+            <div className="max-w-4xl mx-auto mb-12">
+              <p className="text-xl md:text-2xl text-foreground/80 mb-6 text-pretty leading-relaxed">
+                M-Taka aims to educate the community on sustainable waste management practices, connect people in the
+                waste value chain and improve the livelihoods of waste actors.
+              </p>
+
+              {/* Key impact points */}
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <Card className="border-0 bg-card/50 backdrop-blur-sm hover:bg-card transition-all duration-300">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2">Education</h3>
+                    <p className="text-sm text-muted-foreground">Building awareness and changing behaviors</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-0 bg-card/50 backdrop-blur-sm hover:bg-card transition-all duration-300">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2">Connection</h3>
+                    <p className="text-sm text-muted-foreground">Linking stakeholders in the value chain</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-0 bg-card/50 backdrop-blur-sm hover:bg-card transition-all duration-300">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2">Empowerment</h3>
+                    <p className="text-sm text-muted-foreground">Improving livelihoods and dignity</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Call to action */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg">
+                Join Us in Our Mission
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+              >
+                Learn More About Our Impact
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-8 bg-background">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
