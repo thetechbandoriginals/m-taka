@@ -41,8 +41,8 @@ export default function HomePage() {
       </nav>
 
       <ParallaxHero
-        backgroundImage="/african-community-members-sorting-recyclable-waste.jpg"
-        backgroundAlt="Community recycling in Kisumu"
+        backgroundImage="/kisumu-landscape-with-lake-victoria-and-community.jpg"
+        backgroundAlt="Kisumu landscape with Lake Victoria"
       >
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-balance">Building a Zero-Waste Future</h1>
         <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto mb-8 text-pretty">
@@ -177,18 +177,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 px-8 bg-background">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
-            Building Sustainable Zero Waste Circular Economy Communities
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 text-pretty">
-            M-Taka aims to educate the community on sustainable waste management practices, connect people in the waste
-            value chain and improve the livelihoods of waste actors.
-          </p>
-        </div>
-      </section>
-
       <section className="py-16 px-8 bg-card">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">What We Do</h2>
@@ -197,7 +185,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/community-education-workshop-about-waste-separatio.jpg"
+                    src="/community-education-workshop.jpg"
                     alt="Community education"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -217,7 +205,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/waste-collectors-and-recyclers-working-together-in.jpg"
+                    src="/waste-collectors-working-together.jpg"
                     alt="Community connection"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -237,7 +225,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/empowered-waste-workers-in-kenya-receiving-trainin.jpg"
+                    src="/waste-workers-training-empowerment.jpg"
                     alt="Worker empowerment"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -454,7 +442,7 @@ export default function HomePage() {
               <CardHeader className="pb-4">
                 <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/team-of-diverse-professionals-working-on-environme.jpg"
+                    src="/diverse-team-working-on-environmental-project.jpg"
                     alt="About M-Taka team"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -482,7 +470,7 @@ export default function HomePage() {
               <CardHeader className="pb-4">
                 <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/mobile-phone-showing-m-taka-app-interface-with-was.jpg"
+                    src="/mobile-phone-showing-waste-management-app-interfac.jpg"
                     alt="M-Taka mobile app"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -510,7 +498,7 @@ export default function HomePage() {
               <CardHeader className="pb-4">
                 <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/volunteers-and-community-members-working-together-.jpg"
+                    src="/volunteers-and-community-members-working-together.jpg"
                     alt="Community involvement"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
